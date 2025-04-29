@@ -142,8 +142,8 @@ h1,h2,h3{
 }
 h1{
     font-size: 2.5rem;
-    color: #ffffff;
-    text-shadow: #000000;
+    color: var(--white)
+    text-shadow: var(#000000);
 }
 h2{
     font-size: 1.75rem;
