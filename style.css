@@ -1,3 +1,4 @@
+/* CSS BY HASAAN HAYNES */
 /* IMPORTED FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Habibi&family=Irish+Grover&display=swap');
 
@@ -62,20 +63,20 @@ table {
 
 /* GLOBAL STYLES (mobile first/small) */
 @media screen and (min-width: 428px){
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
     nav {
         display: flex;
         justify-content: center;
     }
-    .grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 1rem;
-      }
 }
 /* MEDIA QUERY (medium) */
     @media screen and (min-width: 834px) {
       }
         .grid {
+            display: grid;
           grid-template-columns: repeat(2, 1fr);
         }
 
@@ -90,6 +91,26 @@ table {
     .grid {
         grid-template-columns: repeat(3, 1fr);
       }
+      nav{
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+      }
+      .button-nav, .button-nav2{
+        width: auto;
+    }
+      footer{
+        grid-column: 1/ -1;
+        background-color: var(--green);
+        color: white;
+        text-align: center;
+        width: 100%;
+    }
+    .contact-grid, #contact{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+    }
 }
 
 /* MEDIA QUERY (xl) */
@@ -101,6 +122,19 @@ table {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
       }
+      nav{
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+      }
+      .button-nav, .button-nav2{
+        width: auto;
+    }
+      .contact-grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+    }
     }
 /* h1,h2,h3 */
 h1,h2,h3{
@@ -193,6 +227,12 @@ body {
   
 }
 /* NAV */
+.contact-grid{
+    color: var(--white);
+    display:block;
+    text-align:center;
+    background-color: var(--green);
+}
 footer{
     color: var(--green);
     display:block;
@@ -217,9 +257,9 @@ footer{
     text-align:center;
 }
 #contact h2{
-    font-size 1.75rem;
     color: var(--white);
     background-color: var(--green);
     display:block;
     text-align:center;
 }
+
