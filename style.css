@@ -74,11 +74,11 @@ table {
 }
 /* MEDIA QUERY (medium) */
     @media screen and (min-width: 834px) {
-      }
         .grid {
             display: grid;
           grid-template-columns: repeat(2, 1fr);
         }
+    }
 
 /* MEDIA QUERY (large) */
 @media screen and (min-width: 1280px) {
@@ -142,7 +142,7 @@ h1,h2,h3{
 }
 h1{
     font-size: 2.5rem;
-    color: var(--white)
+    color: var(--white);
     text-shadow: var(#000000);
 }
 h2{
@@ -226,7 +226,6 @@ body {
     width: 200px;
   
 }
-/* NAV */
 .contact-grid{
     color: var(--white);
     display:block;
